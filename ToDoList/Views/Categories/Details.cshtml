@@ -1,0 +1,11 @@
+@{
+    Layout = "_Layout";
+}
+
+@model ToDoList.Models.Category
+
+<h2>Category Details</h2>
+<h3>@Html.ActionLink($"{ Model.Name }", "Index", "Items")</h3>
+<p>@Html.DisplayNameFor(model => model.Specialties): @Html.DisplayFor(model => model.Specialties)</p>
+<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Delete Category", "Delete", new { id = Model.CategoryId })</p>
