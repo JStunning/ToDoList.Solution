@@ -11,7 +11,7 @@ namespace ToDoList.Models
             this.Categories = new HashSet<CategoryItem>();
         }
         public int ItemId {get; set;}
-        public int Description { get; set; }
+        public string Description { get; set; }
         public  ICollection<CategoryItem> Categories { get; }
     }
 }
