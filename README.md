@@ -1,6 +1,6 @@
 # ToDoList
 
-#### _ToDoList, 3/20/2020_
+#### _ToDoList, mm/dd/yyyy_
 
 #### By _**Jack Dunning**_
 
