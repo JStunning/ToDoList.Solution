@@ -14,8 +14,8 @@
 
 @foreach (Item item in Model)
 {
-    <li>@Html.ActionLink($"{ item.Name }", "Details", new { id = item.ItemId })</li>
-    <p>@item.Category.Name</p>
+    <li>@Html.ActionLink($"{ item.Description }", "Details", new { id = item.ItemId })</li>
+    <p>@item.Description</p>
 }
 
 <p>@Html.ActionLink("Add new Item", "Create")</p>

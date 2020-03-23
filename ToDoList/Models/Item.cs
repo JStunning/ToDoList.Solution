@@ -6,9 +6,12 @@ namespace ToDoList.Models
 {
     public class Item
     {
-        public string Name {get; set;}
+        public Item()
+        {
+            this.Categories = new HashSet<CategoryItem>();
+        }
         public int ItemId {get; set;}
-        public int CategoryId { get; set; }
-        public virtual Category Category { get; set; }
+        public int Description { get; set; }
+        public  ICollection<CategoryItem> Categories { get; }
     }
 }

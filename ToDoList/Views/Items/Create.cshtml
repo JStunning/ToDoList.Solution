@@ -4,15 +4,16 @@
 
 @model ToDoList.Models.Item
 
-<h2>Add a new Item</h2>
+<h4>Add a new task</h4>
+
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.Name)
-    @Html.TextBoxFor(model => model.Name)<br>
+    @Html.LabelFor(model => model.Description)
+    @Html.TextBoxFor(model => model.Description)<br>
 
     @Html.LabelFor(model => model.Category)
     @Html.DropDownList("CategoryId")<br>
 
-    <input class="button" type="submit" value="Add new Item" />
+    <input type="submit" value="Add new item" />
 }
-<p>@Html.ActionLink("Show all Members", "Index")</p>
+<p>@Html.ActionLink("Show all items", "Index")</p>
