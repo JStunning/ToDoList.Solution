@@ -14,10 +14,11 @@ _Description._
 * _Download .NET script in the Terminal with this command { dotnet tool install -g dotnet-script }_
 * _Download MySQL from here: https://dev.mysql.com/downloads/_
   * _In MySQL_
-    * CREATE DATABASE jack_dunning;
-    * USE jack_dunning;
-    * CREATE TABLE categories (id serial PRIMARY KEY, name VARCHAR(255), description VARCHAR(255), items VARCHAR(255));
-    * CREATE TABLE items (id serial PRIMARY KEY, name VARCHAR(255), category VARCHAR(255), categoryid INT);
+    * CREATE DATABASE to_do_list;
+    * USE to_do_list;
+    * CREATE TABLE categories (CategoryId serial PRIMARY KEY, Name LONGTEXT);
+    * CREATE TABLE categoryitem (CategoryItemId serial PRIMARY KEY, ItemId Int, CategoryId INT);
+    * CREATE TABLE items (ItemId serial PRIMARY KEY, Description LONGTEXT);
 * _Git clone Or download the zip file from gihub { https://github.com/JackStunning/HairSalon.Solution }_
 * _In the Terminal run this command { dotnet build }_
 * _In the Terminal run this command { dotnet run }_
@@ -30,10 +31,10 @@ _Description._
 
 ## Known Bugs
 
-_No known bugs_
+_No none bugs_
 
 ## Support and contact details
-
+ 
 _Email: JackStunning9001@gmail.com_
 
 ## Technologies Used
